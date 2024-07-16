@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khadii</title>
+    <style>
+        .body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        header{
+            position: fixed;
+            z-index: +999;
+            margin-top: -1vh;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 40px;
+            width: 100%;
+            align-items: center;
+            background-color: #E7E0DA;
+        }
+        
+        nav{
+            margin-top: 2vh;
+z-index: +999;
+            display: block;
+            position: fixed;
+            background-color: #FFFFFF;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+            align-items: center;
+        }
+        nav .logo img{
+            height: 100px;
+            width: 100px;
+        }
+        nav .right{
+            cursor: pointer;
+            width: 200px;
+            display: flex;
+            gap: 20px;
+        }
+        nav .menu{
+            cursor: pointer;
+            text-transform: capitalize;
+            width: 600px;
+            font-size: 0.8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+
+      .first-media{
+            display: none;
+        }
+        .image-2 img{
+            width: 100%;
+            height: 90%;
+        }
+        .img-2media{
+            display: none;
+        }
+        .media1{
+            display: none;
+        }
+        .img-1media{
+            display: none;
+        }
+        .foot-top{
+            margin-top: 2vh;
+            background-color: #FFF9F5;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+            
+           
+        }
+        .left-foot{
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            display: flex;
+gap: 1vw;
+        }
+        .left-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            border: 4px dotted orange;
+        }
+        .left-txt{
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .left-txt h5{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: -3px;
+        }
+        .left-txt p{
+            font-weight: 500;
+            font-size: 15px;
+            margin-top: 5px;
+        
+        }
+        .first{
+            display: flex;
+        }
+        .second2{
+            display: flex;
+        }
+.third3{
+    display: flex;
+}
+.second-footer{
+    border-top: 1px solid rgba(71, 70, 70, 0.507);
+    border-bottom: 1px solid rgba(71, 70, 70, 0.507);
+    align-items:center; 
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0 ;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+}  
+.list-sec{
+    color: rgb(109, 109, 109) ;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+}
+.list-sec ul li{
+    cursor: pointer;
+}
+.list-sec ul li:hover{
+    width: fit-content;
+    border-bottom: 1px solid rgb(109, 108, 108);
+}
+.help1 ul h5 {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}     
+.help1 ul{
+    font-size: 14px;
+    line-height: 30px;
+}
+.customer ul h5 {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+.customer ul{
+    font-size: 14px;
+    line-height: 30px;
+} 
+.more-khadi ul h5 {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+.more-khadi ul{
+    font-size: 14px;
+    line-height: 30px;
+}  
+
+.touch h5 {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+.touch h4 {
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.touch ul {
+    font-size: 14px;
+    line-height: 40px;
+
+}
+.touch ul input::placeholder{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    
+}
+.touch ul input {
+    width: 350px;
+   
+    height: 50px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgb(95, 94, 94);
+    background-color: transparent;
+
+}
+.touch ul button {
+    cursor: pointer;
+    display: flex;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px ;
+    color: white;
+    background-color: rgb(39, 38, 38) !important;
+    margin-left: -80px;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 8px 30px;
+    
+}
+
+
+
+        @media screen and (max-width:1024px) {
+            h
+            .left-foot{
+            width: 250px;
+
+            }
+            nav{
+                justify-content: center;
+                background-color: transparent;
+                position: fixed;
+            }
+            .first h1{
+                font-size: 25px;
+            }
+            .second-footer{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                row-gap: 30px;
+                flex-direction: column;
+                height: fit-content;
+                line-gap-override: 100px;
+            }
+            .left-img{
+                margin-left: -10px;
+            }
+            .foot-top{
+                display: flex;
+              justify-content: center;
+              align-items: center;
+              row-gap: 20px;
+                flex-direction: column;
+            }
+           
+            .list-sec{
+
+                flex-direction: column;
+            }
+            body{
+                overflow-x: hidden;
+                
+            }
+        
+            .first-nor{
+            display: none;
+          }
+            .first-media{
+           
+
+            display: inline-block;
+        }
+        .normal1{
+            display: none;
+        }
+        .media1{
+           
+            display: inline-block;
+        }
+        .img-1media{
+          
+
+            display: inline-block;
+        }
+        .img-1normal{
+            display: none;
+        }
+        
+        nav .menu {
+            display: none;
+        }
+        header a{
+            display: none;
+        }
+        header{
+        height: 40px;
+        font-weight: 400;
+        margin: 0;
+        font-size: 15px;
+        align-items: center;
+        background-color: #F5633A;
+       }
+        nav .right{
+            display: none;
+        }
+        .img-2normal{
+            display: none;
+        }
+        .img-2media{
+     
+            display: inline-block;
+        }
+        .third-main img {
+         
+            height: 100%;
+
+
+        }
+
+
+
+        }
+  
+            
+        
+        
+
+    </style>
+</head>
+<body>
+    <header> Enjoy Further Reduction Online At 70% Off And Ready To Wear <a>Shop Now</a> <div class="right-head"><a>track</a></div></header>
+    <nav>
+        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/KhaadiLogo-22.png" alt=""></logo>
+        </div>
+   
+    <div class="menu">
+        <span style="color: #F5633A;">Sale</span>
+        <span>sale</span>
+        <span>new in</span>
+        <span><a target="_blank" href="newpro.html">#inst khaddi</a></span>
+        <span>fabric</span>
+    </div>
+    <div class="right">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/kkvxgpti.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon>
+
+<lord-icon
+    src="https://cdn.lordicon.com/xyboiuok.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon>
+
+<lord-icon
+    src="https://cdn.lordicon.com/kthelypq.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon>
+
+<lord-icon
+    src="https://cdn.lordicon.com/evyuuwna.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon> 
+    </div>
+</nav>
+<div class="main">
+<video class="first-nor" height="90%" width="100%" controls autoplay="true" muted loop>
+    <source src="main.mp4" type="video/mp4">
+</video>
+
+<video class="first-media" height="100%" width="100%" controls autoplay="true" muted loop>
+    <source src="main medi.mp4">
+</video>
+
+
+</div>
+<div class="second-main">
+    <video class="normal1" height="100%" width="100%" controls autoplay="true" muted loop>
+        <source src="ramdan12.mp4" type="video/mp4">
+    </video>
+    <video class="media1" height="100%" width="100%" controls autoplay="true" muted loop>
+        <source src="ramdan.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div style="display: flex; flex-direction: column;" class="third-main">
+    <img class="img-1normal" src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw986e6072/images/homepage/desktop-home-bannner-1920x1080RTW-euro.jpg" alt="" >
+<img class="img-1media" src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw9c2910bb/images/homepage/mobile-home-banner-390x844px-RTW-euro.jpg" alt="">
+</div>
+<div class="image-2">
+    <img class="img-2normal" src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw9ea84f5e/0.0-20-12-23-desktop-home-bannner-1920x1080px-pk.jpg" alt="">
+<img style="width: 100%;" class="img-2media" src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dwce9e44b7/0.0-20-12-23-mobile-home-banner-390x844px-sale-pk.jpg" alt="">
+</div>
+<footer>
+    <div class="foot-top">
+        <div class="left-foot">
+            <div class="left-img">
+                <lord-icon
+    src="https://cdn.lordicon.com/zzjjvkam.json"
+    trigger="hover"
+    colors="primary:#e86830,secondary:#e86830"
+    style="width:50px;height:50px">
+</lord-icon>
+</div>
+            <div class="left-txt">
+            <h5>Shipping Charges</h5>
+            <p>Starting For Rs. 120</p>
+            </div>
+        </div>
+        <div class="left-foot">
+            <div class="left-img">
+                <lord-icon
+    src="https://cdn.lordicon.com/xyboiuok.json"
+    trigger="hover"
+    colors="primary:#e86830"
+    style="width:50px;height:50px">
+</lord-icon></div>
+            <div class="left-txt">
+            <h5>CRAFTED WITH CARE</h5>
+            <p>Curated with you in mind.</p>
+            </div>
+        </div>
+        <div class="left-foot">
+            <div class="left-img">
+                <lord-icon
+                src="https://cdn.lordicon.com/surcxhka.json"
+                trigger="hover"
+                colors="primary:#e86830,secondary:#e86830"
+                style="width:50px;height:50px">
+            </lord-icon>
+        </div>
+            <div class="left-txt">
+            <h5>Find Stores</h5>
+            <p>Stores Countrywide Across Pakistan, uk, UAE</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="second-footer">
+        <div class="first">
+            <h1>NEED HELP ?</h1>
+        </div>
+        <div class="second2">
+            <div style="margin-top: 0.7vh;" class="first-img">
+                <lord-icon
+    src="https://cdn.lordicon.com/rsvfayfn.json"
+    trigger="hover"
+    style="width:40px;height:40px">
+</lord-icon>
+            </div>
+            <div class="second2txt">
+                <h3>0800 74007</h3>
+            </div>
+        </div>
+        <div class="third3">
+            <div style="margin-top: 1vh;" class="third3-img">
+            <img style="position: relative;" src="mail.png" alt="" height="30px">
+        </div>
+        <div class="txt3">
+            <h3>E MAIL US</h3>
+        </div>
+        
+    </div>
+    </div>
+    <div class="list-sec">
+        <div class="help1">
+        <ul style="list-style: none;"   >
+            <h5>HELP</h5>
+            <li>Track Your Order</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy policy</li>
+        </ul>
+    </div>
+    <div class="customer">
+        <ul style="list-style: none;">
+            <h5>CUSTOMER SUPPORT</h5>
+            <li>Customer Service</li>
+            <li>Store Locater</li>
+            <li>Disclaimer</li>
+            <li>Shipping & Handling</li>
+            <li>Returns & Exchanges</li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="more-khadi">
+        <ul style="list-style: none;">
+            <h5>MORE FROM KHAADI</h5>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Blogs</li>
+        </ul>
+
+    </div>
+    <div class="touch">
+        <h5>GET IN TOUCH</h5>
+        <ul style="list-style: none;">
+        <li> <img style="position: relative; margin-top: 1vh;" src="mail.png" alt="" height="25px">CustomerCare@khaadi.com</li>
+        <li>           <lord-icon
+            src="https://cdn.lordicon.com/rsvfayfn.json"
+            trigger="hover"
+            style="width:40px;height:35px">
+        </lord-icon>0800 74007</li>
+        <h4>GET THE LATEST NEWS</h4>
+        <div class="email">
+        <input type="email" placeholder="E-mail">
+        <button>Confirm</button>
+    </div>
+        </ul>
+    </div>
+</div>
+</footer>
+    
+
+</video>
+</body>
+</html>
